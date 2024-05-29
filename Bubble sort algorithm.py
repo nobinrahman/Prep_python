@@ -130,3 +130,17 @@ x = moving_zeros_to_left(nums)
 print(x)
 
 
+##### 4 #####
+
+def palindrome(s):
+    cleaned_string = ''
+    for char in s:
+        if char != ' ':
+            cleaned_string = cleaned_string + char.lower() # if you dont make it lower the string wont be palindrome. It is important to change the charecters to lower letter
+    if cleaned_string == cleaned_string[::-1]:
+        print('This is Palindrome')
+    else:
+        print('This is not Palindrome')
+s = "A man a plan a canal Panama"
+palindrome(s)
+
