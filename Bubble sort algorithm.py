@@ -99,6 +99,9 @@ nums = [0, 1, 0, 3, 12]
 x = moving_zeros_to_right(nums)
 print(x)
 
+# Input: nums = [0,1,0,3,12]
+# Output: [0,0,1,3,12]
+
 def moving_zero_to_left(nums):
 	count = 0 
 	for i in range(len(nums)-1, -1, -1):
@@ -109,3 +112,21 @@ def moving_zero_to_left(nums):
 nums = [0, 1, 0, 3, 12]
 x = moving_zeros_to_left(nums)
 print(x)
+
+# Input: nums = [0,1,0,3,12]
+# Output: [0,0,1,3,12]
+
+def moving_zero_and_sorted(nums):
+	non_zero = []
+	for num in nums:
+		if num = != 0
+		non_zero.append(num)
+	non_zero.sorted()
+	zero_count = nums.count(0)
+	sorted_nums = non_zero + [0] * zero_count
+	return sorted_nums
+nums = [5,2,0,3,0,1,6,0]
+x = moving_zeros_to_left(nums)
+print(x)
+
+
